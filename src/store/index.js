@@ -1,0 +1,1 @@
+import { createStore } from 'redux'import rootReducer from './rootReducer'const configureStore = () => {  const store = createStore(rootReducer, [])  return new Promise((resolve, reject) => {    resolve({ store })  })}export default configureStore
