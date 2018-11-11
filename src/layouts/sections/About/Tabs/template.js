@@ -2,6 +2,7 @@ import React from 'react'
 import Tabs from 'components/Tabs'
 import Button from 'components/Button'
 import FirstImage from 'assets/img/general/fond1.svg'
+import { FormattedHTMLMessage } from 'react-intl'
 
 const AboutTabs = props => (
   <Tabs>
@@ -16,25 +17,8 @@ const AboutTabs = props => (
             />
           </div>
           <div className="col-1-2">
-            <h4 className="title-mini">Life quality </h4>
-            <p>
-              Any socially oriented community of adherents are united by the
-              single purpose or by the several uniting factors which steadily
-              create basis for development of growth and the life quality
-              improvement of each member. The OASIS is the main uniting factor
-              and technologically created social financial tool which is
-              individually creats the most comfortable conditions for a better
-              life and financial freedom of those who appreciate safety, mutual
-              aid and equitable distribution of material benefits among all
-              persons in need.
-            </p>
-            <p>
-              It is important to understand that the high level of a life
-              quality for an each OASIS member isn’t privilege if you became a
-              part of OASIS. It is norm for any member and advantage before
-              those who for one reason or another couldn’t estimate fully all
-              magnificence and social security of participation in OASIS yet.
-            </p>
+            <FormattedHTMLMessage id="layouts.sections.about.tabs.first" />
+
             <div className="buttonss">
               <Button type="a" nature="light" margin="0 30px 0 0" href="#miss">
                 OUR MISSION

@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import logo from './assets/img/logo.svg'
 import './App.scss'
 import { Provider } from 'react-redux'
 import ConnectedIntlProvider from './providers/ConnectedIntlProvider'
 import { FormattedMessage } from 'react-intl'
 
 import Nav from './layouts/Nav'
+import TopSection from './layouts/sections/Top'
 import AboutSection from './layouts/sections/About'
 
 class App extends Component {
@@ -21,13 +21,9 @@ class App extends Component {
               <div className="pc-hide aside-menu-mob">
                 <Nav type="nav-mob" />
               </div>
+              <TopSection />
               <AboutSection />
             </section>
-
-            <FormattedMessage
-              id="firstsсreen.maintext"
-              defaultMessage="Default welcome"
-            />
           </div>
         </ConnectedIntlProvider>
       </Provider>

@@ -1,1 +1,4 @@
-{  "firstsсreen.maintext": "Welcome to a financial system of the future!"}
+{
+  "firstsсreen.maintext": "Welcome to a financial system of the future!",
+  "layouts.sections.about.tabs.first": "<h4 className=\"title-mini\">Life quality </h4>"
+}
