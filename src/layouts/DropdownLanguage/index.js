@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { compose, bindActionCreators } from 'redux'
-
+import { bindActionCreators } from 'redux'
 import * as languageService from 'services/LanguageService'
-import { selectors } from 'data'
-import Select from '../../components/Select'
+import { actions, selectors } from 'data'
+import Dropdown from '../../components/Dropdown'
 
 class DropdownLanguageContainer extends Component {
   constructor (props) {
@@ -22,14 +21,15 @@ class DropdownLanguageContainer extends Component {
       return {
         text: lang.name,
         value: lang.language,
-        language: lang.language
+        language: lang.language,
+        image: lang.image
       }
     })
-    console.log(languageList)
 
     return (
-      <Select
+      <Dropdown
         color="white"
+        down
         items={languageList}
         selectedValue={currentLanguage}
         callback={selectedLanguage => this.handleClick(selectedLanguage)}
@@ -44,7 +44,7 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  // preferencesActions: bindActionCreators(actions.preferences, dispatch)
+  preferencesActions: bindActionCreators(actions.preferences, dispatch)
 })
 
 export default connect(

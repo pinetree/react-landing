@@ -7,6 +7,10 @@ import { FormattedMessage } from 'react-intl'
 import Nav from './layouts/Nav'
 import TopSection from './layouts/sections/Top'
 import AboutSection from './layouts/sections/About'
+import HowSection from './layouts/sections/How'
+import MissionSection from './layouts/sections/Mission'
+import ConditionsSection from './layouts/sections/Conditions'
+import PlaceWithdrawSection from './layouts/sections/PlaceWithdraw'
 
 class App extends Component {
   render () {
@@ -22,6 +26,10 @@ class App extends Component {
                 <Nav type="nav-mob" />
               </div>
               <TopSection />
+              <HowSection />
+              <MissionSection />
+              <ConditionsSection />
+              <PlaceWithdrawSection />
               <AboutSection />
             </section>
           </div>

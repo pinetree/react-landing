@@ -28,26 +28,6 @@ const renderApp = (Component, store) => {
   }
 }
 
-const renderError = e => {
-  // eslint-disable-next-line no-console
-  console.error(e)
-  // ReactDOM.render(<Error />, document.getElementById('root'))
-}
+renderApp(App, configureStore())
 
-// =============================================================================
-// ================================= APP =======================================
-// =============================================================================
-configureStore()
-  .then(x => {
-    renderApp(App, x.store)
-  })
-  .catch(e => {
-    renderError(e)
-  })
-
-// ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister()

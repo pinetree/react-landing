@@ -52,19 +52,8 @@ class Header extends Component {
           </a>
           <Nav type="nav-top" className="flex" />
 
-          <div className="language-drop flex">
-            <span className="language-drop__text">language</span>
+          <div className="language-drop">
             <DropdownLanguage />
-            <div className="language-drop__wrap">
-              <div className="language-drop__current">
-                <img src="assets/img/general/uk.png" alt="" />
-              </div>
-              <div className="language-drop__down">
-                <a href="rus.html" className="language-drop__choose">
-                  <img src="assets/img/general/rus.png" alt="" />
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </header>

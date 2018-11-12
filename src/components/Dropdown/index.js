@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import onClickOutside from 'react-onclickoutside'
 
 import Dropdown from './template'
-import { keysIn } from 'ramda'
 
-class Select extends Component {
+class DropdownContainer extends Component {
   constructor (props) {
     super(props)
 
@@ -47,7 +46,7 @@ class Select extends Component {
   }
 }
 
-Select.defaultProps = {
+DropdownContainer.defaultProps = {
   color: 'brand-secondary',
   opened: false,
   selectedValue: 0,
@@ -55,7 +54,7 @@ Select.defaultProps = {
   down: false
 }
 
-Select.propTypes = {
+DropdownContainer.propTypes = {
   selectedValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   items: PropTypes.arrayOf(
     PropTypes.shape({
@@ -65,9 +64,9 @@ Select.propTypes = {
   ),
   callback: PropTypes.func.isRequired,
   opened: PropTypes.bool,
-  color: '#000',
+  color: PropTypes.string,
   uppercase: PropTypes.bool,
   down: PropTypes.bool
 }
 
-export default onClickOutside(Select)
+export default onClickOutside(DropdownContainer)

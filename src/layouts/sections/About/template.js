@@ -4,6 +4,9 @@ import Tabs from './Tabs'
 
 const About = props => (
   <section className="about-sec" id="about">
+    <div className="bord-bott">
+      <div className="bord-bott__arrow" />
+    </div>
     <Header />
     <Tabs />
   </section>

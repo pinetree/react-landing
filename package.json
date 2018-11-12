@@ -15,6 +15,7 @@
     "react-redux": "^5.1.0",
     "react-scripts": "2.1.1",
     "redux": "^4.0.1",
+    "redux-persist": "4.8.3",
     "reselect": "^4.0.0",
     "styled-components": "^4.0.3"
   },
