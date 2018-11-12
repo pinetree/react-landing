@@ -5,7 +5,7 @@ import Content from './Content'
 const Top = props => (
   <section className="top-sec">
     <div className="video-b" ref="main-video" />
-    <Header />
+    <Header toggleMobileMenu={props.toggleMobileMenu} />
     <Content />
   </section>
 )

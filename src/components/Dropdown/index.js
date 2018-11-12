@@ -47,7 +47,7 @@ class DropdownContainer extends Component {
 }
 
 DropdownContainer.defaultProps = {
-  color: 'brand-secondary',
+  color: 'white',
   opened: false,
   selectedValue: 0,
   uppercase: true,

@@ -10,28 +10,46 @@ import MissionSection from './layouts/sections/Mission'
 import ConditionsSection from './layouts/sections/Conditions'
 import PlaceWithdrawSection from './layouts/sections/PlaceWithdraw'
 import ContactsSection from './layouts/sections/Contacts'
+import Footer from './layouts/sections/Footer'
 
 class App extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      showMobileMenu: false
+    }
+  }
   render () {
     const { store, messages } = this.props
+
+    const handleToggleMobileMenu = () => {
+      this.setState({ showMobileMenu: !this.state.showMobileMenu })
+      return this.state.showMobileMenu
+    }
 
     return (
       <Provider store={store}>
         <ConnectedIntlProvider messages={messages}>
-          <div className="App">
+          <React.Fragment>
             <section className="page__wrapper rel">
               <div className="layer-mob pc-hide" />
-              <div className="pc-hide aside-menu-mob">
+              <div
+                className={`pc-hide aside-menu-mob ${
+                  this.state.showMobileMenu ? 'active' : ''
+                }`}
+              >
                 <Nav type="nav-mob" />
               </div>
-              <TopSection />
+              <TopSection toggleMobileMenu={() => handleToggleMobileMenu()} />
               <HowSection />
               <MissionSection />
               <ConditionsSection />
               <PlaceWithdrawSection />
               <ContactsSection />
             </section>
-          </div>
+            <Footer toggleMobileMenu={() => handleToggleMobileMenu()} />
+          </React.Fragment>
         </ConnectedIntlProvider>
       </Provider>
     )

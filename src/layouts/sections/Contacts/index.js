@@ -23,7 +23,7 @@ const ContactDescr = styled.div`
 `
 
 export default () => (
-  <section className="contacts-sec sec-pad rel white-section" id="how">
+  <section className="contacts-sec sec-pad rel white-section" id="contacts">
     <FormattedMessage id="layouts.sections.contacts.title">
       {txt => <h2 className="main-title tac">{txt}</h2>}
     </FormattedMessage>

@@ -1,16 +1,13 @@
 import React from 'react'
-import styled from 'styled-components'
-import { FormattedMessage } from 'react-intl'
-import colors from 'assets/css/partials/_variables.scss'
 
 export default () => (
   <section className="investc sec-pad rel" id="place">
     <div className="w1140 rel">
       <h4 className="title-mini title-mini_mt0 white tac">
-        How to place ETH to OASIS fund?{' '}
+        How to place ETH to Smart Holder fund?
       </h4>
       <p className="white fz15">
-        Send min 0.01 ETH to the OASIS smart contract fund
+        Send min 0.01 ETH to the Smart Holder smart contract fund
       </p>
       <div className="row">
         <div className="col-3-4">
@@ -32,7 +29,7 @@ export default () => (
         <div className="col-auto">
           <p className="fz14 white lh24 marg-cust1">
             Recommended gas limit is: <b className="m-color">300000</b>, current
-            gas price can be checked{' '}
+            gas price can be checked
             <a
               className="gold-link m-color lh24"
               href="http://ethgasstation.info"
@@ -55,7 +52,7 @@ export default () => (
             <span className="aht-red">
               Transfer from exchange wallets isn’t allowed. Transfer is possible
               only from your personal ETH-wallet from which you have private
-              keys.{' '}
+              keys.
             </span>
           </div>
         </div>
@@ -89,7 +86,7 @@ export default () => (
         <img src="static/img/general/pict3.png" alt="" width="103" />
       </div>
       <h4 className="title-mini title-mini_mt0 white tac">
-        How to withdraw ETH from OASIS?{' '}
+        How to withdraw ETH from Smart Holder?
       </h4>
       <div className="row">
         <div className="col-1-2 rel">
@@ -102,8 +99,8 @@ export default () => (
         </div>
         <div className="col-1-2">
           <p className="white lh-28 margb-54">
-            Send <b className="m-color fz35">0 ETH</b> to the OASIS fund address
-            and receive your payment instantly
+            Send <b className="m-color fz35">0 ETH</b> to the Smart Holder fund
+            address and receive your payment instantly
           </p>
           <form className="form" action="">
             <input

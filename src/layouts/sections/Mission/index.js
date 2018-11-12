@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default () => (
-  <section className="mission-sec sec-pad rel" id="miss">
+  <section className="mission-sec sec-pad rel" id="mission">
     <div className="bord-bott bord-bott_top" />
     <div className="w1140">
       <h2 className="main-title white tac">OUR MISSION</h2>
@@ -47,9 +47,10 @@ export default () => (
             Uniting of the people seeking to reach financial independence, safe
             and equitable distribution of profit between all members it is the
             main goals which we want to reach, providing to everyone from any
-            country of the world of OASIS as the uniform platform of social fund
-            and a reliable way of obtaining financial independence by the last
-            achievements of blockchain-technologies and smart contracts.
+            country of the world of Smart Holder as the uniform platform of
+            social fund and a reliable way of obtaining financial independence
+            by the last achievements of blockchain-technologies and smart
+            contracts.
           </p>
           <div className="buttonss buttonss_onMob">
             <a className="button button_border mr30" href="#buterin">
@@ -70,9 +71,9 @@ export default () => (
             Thanks to unique technology of the algorithmic and automatic
             distribution of the Ethereum cryptocurrency among members which
             performs on the modern and not having analogs of the smart contract
-            OASIS basis, which can’t be changed, we have received opportunities,
-            unique by own nature, for constantly working fund within
-            blockchain-technology with stable, risk-free and high profit.
+            Smart Holder basis, which can’t be changed, we have received
+            opportunities, unique by own nature, for constantly working fund
+            within blockchain-technology with stable, risk-free and high profit.
           </p>
           <div className="buttonss buttonss_onMob">
             <a className="button button_border mr30" href="#buterin">
@@ -96,7 +97,7 @@ export default () => (
             smart contract. Only creation of the technology making impossible
             external intervention in the mechanism of of a profit distribution
             and in advance stipulated and unchangeable conditions of cooperation
-            can guarantee trouble-free functioning of the OASIS fund.
+            can guarantee trouble-free functioning of the Smart Holder fund.
           </p>
           <div className="buttonss buttonss_onMob">
             <a className="button button_border mr30" href="#buterin">

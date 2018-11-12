@@ -86,12 +86,12 @@ export default () => (
             <img className="about__icons mob-hide" src={iconTrans} alt="" />
             <div className="about__right flex">
               <div className="about__right1">
-                <p className="about__text about__text_mb13">
+                <div className="about__text about__text_mb13">
                   Recent transactions
                   <p className="about__num">
                     <span id="fundTransactions">0</span> eth
                   </p>
-                </p>
+                </div>
               </div>
               <div className="about__right2 df" id="fundTransactions">
                 <div className="about__line">

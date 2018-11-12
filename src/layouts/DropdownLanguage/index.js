@@ -16,7 +16,7 @@ class DropdownLanguageContainer extends Component {
   }
 
   render () {
-    const { currentLanguage, languages } = this.props
+    const { currentLanguage, languages, color, down } = this.props
     const languageList = languages.map(lang => {
       return {
         text: lang.name,
@@ -28,8 +28,8 @@ class DropdownLanguageContainer extends Component {
 
     return (
       <Dropdown
-        color="white"
-        down
+        color={color}
+        down={down}
         items={languageList}
         selectedValue={currentLanguage}
         callback={selectedLanguage => this.handleClick(selectedLanguage)}

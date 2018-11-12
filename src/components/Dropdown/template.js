@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import downIcon from 'assets/img/general/down-white.svg'
-import upIcon from 'assets/img/general/up-white.svg'
+import downIconWhite from 'assets/img/general/down-white.svg'
+import upIconWhite from 'assets/img/general/up-white.svg'
+import downIconBlack from 'assets/img/general/down.svg'
+import upIconBlack from 'assets/img/general/up.svg'
 
 const Wrapper = styled.div`
   display: inline-flex;
@@ -10,10 +12,9 @@ const Wrapper = styled.div`
   position: relative;
 `
 const ButtonContainer = styled.div`
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
   width: inherit;
   & > * {
@@ -21,13 +22,18 @@ const ButtonContainer = styled.div`
   }
 `
 const Button = styled.div`
-  display: inline;
+  align-self: flex-start;
   font-family: 'Montserrat', Helvetica, sans-serif;
+  & > img {
+    width: 21px;
+  }
 `
 const DropdownIcon = styled.span`
+  display: flex;
+  align-items: center;
   padding-left: 2px;
   width: 5px;
-  height: 5px;
+  height: 15px;
   & > img {
     width: 5px;
     height: 5px;
@@ -86,6 +92,9 @@ const Dropdown = props => {
     handleCallback
   } = props
 
+  const upIcon = color === 'white' ? upIconWhite : upIconBlack
+  const downIcon = color === 'white' ? downIconWhite : downIconBlack
+
   return (
     <Wrapper uppercase={uppercase}>
       <DropdownList toggled={toggled} down={down}>
@@ -114,7 +123,7 @@ const Dropdown = props => {
 }
 
 Dropdown.defaultProps = {
-  color: 'brand-secondary',
+  color: 'white',
   toggled: false,
   selectedValue: 0,
   uppercase: true,

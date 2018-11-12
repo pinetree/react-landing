@@ -32,7 +32,10 @@ class Header extends Component {
         <div className="row align-justify w1140">
           <div className="header__mob-show-menu">
             <button className="hamburger hamburger--slider">
-              <span className="hamburger-box">
+              <span
+                className="hamburger-box"
+                onClick={() => this.props.toggleMobileMenu()}
+              >
                 <span className="hamburger-inner" />
               </span>
             </button>
@@ -46,14 +49,13 @@ class Header extends Component {
               alt=""
             />
             <span className="logo__wrap">
-              <span className="logo__title">oasis </span>
+              <span className="logo__title">Smart Holder </span>
               <span className="logo__mini-title">eth distribution fund</span>
             </span>
           </a>
-          <Nav type="nav-top" className="flex" />
-
+          <Nav type="nav-top" />
           <div className="language-drop">
-            <DropdownLanguage />
+            <DropdownLanguage down={true} />
           </div>
         </div>
       </header>

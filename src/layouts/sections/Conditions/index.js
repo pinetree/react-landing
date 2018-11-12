@@ -55,7 +55,7 @@ const Rounded = styled.div`
 `
 
 export default () => (
-  <section className="conditions-sec sec-pad rel white-section" id="how">
+  <section className="conditions-sec sec-pad rel white-section" id="conditions">
     <FormattedMessage id="layouts.sections.conditions.title">
       {txt => <Title className="main-title tac">{txt}</Title>}
     </FormattedMessage>

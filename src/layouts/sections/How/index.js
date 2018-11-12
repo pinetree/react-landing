@@ -21,16 +21,18 @@ export default () => (
             {txt => <p>{txt}</p>}
           </FormattedMessage>
           <br />
-          <Button nature="primary">Join</Button>
+          <Button nature="primary" href="#">
+            Join
+          </Button>
         </div>
         <div className="col-1-2 fz0">
           <iframe
+            title="video"
             width="460"
             height="320"
             src="https://www.youtube.com/embed/ilLowhZYa6g"
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            showTitle="false"
             allowFullScreen
           />
         </div>
