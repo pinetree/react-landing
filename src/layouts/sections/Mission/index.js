@@ -1,5 +1,4 @@
 import React from 'react'
-import { FormattedMessage, FormattedHTMLMessage } from 'react-intl'
 
 export default () => (
   <section className="mission-sec sec-pad rel" id="miss">

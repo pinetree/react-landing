@@ -5,9 +5,6 @@ import colors from 'assets/css/partials/_variables.scss'
 
 export default () => (
   <section className="investc sec-pad rel" id="place">
-    <div className="bord-bott">
-      <div className="bord-bott__arrow" />
-    </div>
     <div className="w1140 rel">
       <h4 className="title-mini title-mini_mt0 white tac">
         How to place ETH to OASIS fund?{' '}

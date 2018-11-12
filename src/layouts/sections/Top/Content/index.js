@@ -49,7 +49,6 @@ export default () => (
         <div className="col-1-3">
           <div className="about flex">
             <img className="about__icons" src={iconFund} alt="" />
-
             <div className="about__right">
               <p className="about__text">Fund balance</p>
               <p className="about__num">

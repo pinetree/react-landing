@@ -7,6 +7,7 @@
   "layouts.sections.conditions.title": "Investing conditions",
   "layouts.sections.conditions.header": "The best condition of a passive earnings",
   "layouts.sections.conditions.text": "The main difference of work of the SMART HOLDER smart contract within functioning of investments is that investments are limited to work term. This term fixed is in {days} calendar days, after which investment stops work and for continuation of a profit receiving it is necessary to create new investment in fund.",
+  "layouts.sections.contacts.title": "Contact us",
 
   "percent.perday": "per day for {days} days"
 }
