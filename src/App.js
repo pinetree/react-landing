@@ -3,7 +3,7 @@ import './App.scss'
 import { Provider } from 'react-redux'
 import ConnectedIntlProvider from './providers/ConnectedIntlProvider'
 
-import Nav from './layouts/Nav'
+import Nav from 'layouts/Nav'
 import TopSection from './layouts/sections/Top'
 import HowSection from './layouts/sections/How'
 import MissionSection from './layouts/sections/Mission'
@@ -20,6 +20,7 @@ class App extends Component {
       showMobileMenu: false
     }
   }
+
   render () {
     const { store, messages } = this.props
 
@@ -32,15 +33,15 @@ class App extends Component {
       <Provider store={store}>
         <ConnectedIntlProvider messages={messages}>
           <React.Fragment>
+            <div className="layer-mob pc-hide" />
+            <div
+              className={`pc-hide aside-menu-mob ${
+                this.state.showMobileMenu ? 'active' : ''
+              }`}
+            >
+              <Nav type="nav-mob" />
+            </div>
             <section className="page__wrapper rel">
-              <div className="layer-mob pc-hide" />
-              <div
-                className={`pc-hide aside-menu-mob ${
-                  this.state.showMobileMenu ? 'active' : ''
-                }`}
-              >
-                <Nav type="nav-mob" />
-              </div>
               <TopSection toggleMobileMenu={() => handleToggleMobileMenu()} />
               <HowSection />
               <MissionSection />

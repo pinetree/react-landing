@@ -40,20 +40,18 @@ class Header extends Component {
               </span>
             </button>
           </div>
-          <a className="logo" href="/">
-            <img
-              src={logo}
-              className="logo-vect"
-              width="53"
-              height="54"
-              alt=""
-            />
-            <span className="logo__wrap">
-              <span className="logo__title">Smart Holder </span>
-              <span className="logo__mini-title">eth distribution fund</span>
-            </span>
-          </a>
-          <Nav type="nav-top" />
+          <div className="flex-menu">
+            <a className="logo" href="/">
+              <img
+                src={logo}
+                className="logo-vect"
+                width="53"
+                height="54"
+                alt=""
+              />
+            </a>
+            <Nav type="nav-top" />
+          </div>
           <div className="language-drop">
             <DropdownLanguage down={true} />
           </div>
