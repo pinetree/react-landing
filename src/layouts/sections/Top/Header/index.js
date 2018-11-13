@@ -12,6 +12,7 @@ class Header extends Component {
   }
 
   componentDidMount = () => {
+    this.handleOnScroll()
     window.addEventListener('scroll', this.handleOnScroll)
   }
 

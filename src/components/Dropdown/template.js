@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import colors from 'assets/css/partials/_variables.scss'
 import downIconWhite from 'assets/img/general/down-white.svg'
 import upIconWhite from 'assets/img/general/up-white.svg'
 import downIconBlack from 'assets/img/general/down.svg'
@@ -17,9 +18,6 @@ const ButtonContainer = styled.div`
   justify-content: center;
   cursor: pointer;
   width: inherit;
-  & > * {
-    color: ${props => props.theme[props.color]}!important;
-  }
 `
 const Button = styled.div`
   align-self: flex-start;
@@ -41,9 +39,11 @@ const DropdownIcon = styled.span`
 `
 const DropdownList = styled.ul`
   background-clip: padding-box;
-  background-color: ${props => props.theme['white']};
-  border: 1px solid ${props => props.theme['gray-1']};
+  background-color: ${props =>
+    props.color !== 'white' ? colors['whiteColor'] : colors['blueHeavyColor']};
+  border: 1px solid ${colors['lightColor']};
   border-radius: 4px;
+  opacity: 0.9;
   bottom: 0px;
   #box-sizing: border-box;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
@@ -55,9 +55,9 @@ const DropdownList = styled.ul`
   list-style-image: none;
   list-style-position: outside;
   list-style-type: none;
-  margin: 2px 0px;
+  margin: 2px -5px;
   max-height: 400px;
-  min-width: 20px;
+  min-width: 10px;
   overflow: auto;
   padding: 5px 0px;
   position: absolute;
@@ -71,7 +71,7 @@ const DropdownList = styled.ul`
 const DropdownItem = styled.li`
   color: ${props => props.theme['gray-5']};
   cursor: pointer;
-  padding: 3px 20px;
+  padding: 3px 10px;
   font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -97,7 +97,7 @@ const Dropdown = props => {
 
   return (
     <Wrapper uppercase={uppercase}>
-      <DropdownList toggled={toggled} down={down}>
+      <DropdownList toggled={toggled} down={down} color={color}>
         {items.map((item, index) => {
           return (
             <DropdownItem key={index} onClick={handleCallback.bind(null, item)}>
